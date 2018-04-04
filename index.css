@@ -1,0 +1,63 @@
+#background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 150%;
+    z-index: -1;
+}
+#title {
+    font-family: "Cormorant Garamond", 'Times New Roman', Times, serif;
+    font-size: 500%;
+    color: white;
+    text-align: center;
+    padding: 9%;
+}
+#main, #section2, #section3, #steps, #section4 {
+    font-family: "Cormorant Garamond", 'Times New Roman', Times, serif;
+    font-size: 250%;
+    color: white;
+    text-align: center;
+}
+#steps {
+    font-size: 150%;
+}
+#center {
+    text-align: center;
+}
+#tips {
+    font-size: 140%;
+}
+#section2{
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+#section4 {
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
+#section3 {
+    padding-top: 10%;
+    padding-bottom: 2%;
+}
+.arrow-img {
+    text-align: center;
+}
+.arrow {
+    width: 10%;
+    -webkit-animation: arrow-jump 2s infinite; 
+    -moz-animation:    arrow-jump 2s infinite; 
+    -o-animation:      arrow-jump 2s infinite; 
+    animation:         arrow-jump 2s infinite; 
+}
+@-webkit-keyframes arrow-jump {
+    0%   { opacity: 0;}
+    100% { opacity: 1; 
+          -webkit-transform: translateY(15px);
+          -moz-transform: translateY(15px);
+          -o-transform: translateY(15px);
+          transform: translateY(15px);
+      }
+}
+ul {
+    list-style-type: none;
+}

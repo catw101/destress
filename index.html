@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>escape reality</title>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Cormorant+Garamond">
+        <link rel = "stylesheet" href = "index.css">
+        <script>
+            $(function() {
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1000, function(){
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body onload = "initialize();">
+        <img id = "background" src = "night sky.jpg"/>
+        <p id = "title">escape reality</p>
+        <div id = "main">Are you feeling stressed out? Take a few minutes to get away from it all.</div>
+
+        <div class = "arrow-img"><a href = "#section2"><img class = "arrow" src = "arrow.png"></a><!--<a href="http://www.transparentpng.com//details/right-grey-arrow-icon_5543.html">transparentpng.com</a>--></div>
+
+        <div id = "section2">Take some time to meditate.</div>
+        <ul id = "steps">
+            <li id = "tips">Tips for meditating:</li>
+            <li>Go to a room with minimal distractions.</li>
+            <li>Try to let go of your thoughts.</li>
+            <li>Commit to a certain schedule.</li>    
+            <li>(There is meditation music you can play at the bottom of this website!)</li>
+        </ul>
+
+        <div class = "arrow-img"><a href = "#section3"><img class = "arrow" src = "arrow.png"></a></div>
+        
+        <div id = "section3">Yoga can also be a helpful way to destress.</div>
+        <div id = "center"><iframe width="560" height="315" src="https://www.youtube.com/embed/oBu-pQG6sTY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+
+        <div class = "arrow-img"><a href = "#section4"><img class = "arrow" src = "arrow.png"></a></div>
+
+        <div id = "section4">Sometimes, just closing your eyes and taking a few deep breaths can be relaxing. Let go of all your worries. Picture yourself in your favorite place. And even if it's just for a few moments, enjoy yourself.</div>
+
+        <div class = "arrow-img"><a href = "#section5"><img class = "arrow" src = "arrow.png"></a></div>
+
+        <div id = "section5"></div>
+        <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1898266&color=%239c9c9c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    </body>
+</html>
